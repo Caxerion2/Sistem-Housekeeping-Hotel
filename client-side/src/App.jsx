@@ -37,7 +37,7 @@ function App () {
                     </div>
                 </div>
             }/>
-            <Route path="/datapetugas" element={
+            <Route path="/staff" element={
                 <div className="flex min-h-screen bg-gray-50">
                     <Sidebar collapsed={sidebarCollapsed} onToggle={() => setSidebarCollapsed(prev => !prev)}/>
                     <div className={`flex-1 ${sidebarWidth} pt-20`}>
@@ -64,7 +64,7 @@ function App () {
                     </div>
                 </div>
             }/>
-            <Route path="/riwayatpembersihan" element={
+            <Route path="/riwayat-pembersihan" element={
                 <div className="flex min-h-screen bg-gray-50">
                     <Sidebar collapsed={sidebarCollapsed} onToggle={() => setSidebarCollapsed(prev => !prev)}/>
                     <div className={`flex-1 ${sidebarWidth} pt-20`}>
