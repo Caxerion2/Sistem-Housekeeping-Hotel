@@ -17,7 +17,7 @@ function Inventory() {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('Semua');
 
-  //NANTI KALO BACKEND DAH READY, HAPUS DUMMY_INVENTORY trus useEffect nya di pake
+  //NANTI KALO BACKEND DAH READY, HAPUS DUMMY_INVENTORY trus useEffect nya di pake yak
   /*
   useEffect(() => {
     const fetchInventory = async () => {
