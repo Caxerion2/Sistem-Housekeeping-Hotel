@@ -1,8 +1,7 @@
 import { useState, useEffect } from 'react';
 import api from '../services/api';
 
-// Data Dummy diselaraskan 100% dengan tabel cleaning_logs & relasinya (rooms, employees)
-const DUMMY_CLEANING_LOGS = [
+const dummyDatabase = [
   {
     id: 1,
     room_number: '101',
@@ -38,14 +37,11 @@ const DUMMY_CLEANING_LOGS = [
 ];
 
 function RiwayatPembersihan() {
-  const [logs, setLogs] = useState(DUMMY_CLEANING_LOGS);
+  const [logs, setLogs] = useState(dummyDatabase);
   const [loading, setLoading] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
 
-  // =========================================================================
-  // 💡 NANTI KALAU BACKEND READY (GET /api/maintenance/history):
-  // Hapus DUMMY_CLEANING_LOGS dan aktifkan useEffect di bawah ini.
-  // =========================================================================
+  //Hapus dummyDatabase dan aktifin useEffect yg di bawah
   /*
   useEffect(() => {
     const fetchCleaningHistory = async () => {
@@ -94,9 +90,6 @@ function RiwayatPembersihan() {
             Catatan log pekerjaan kebersihan kamar oleh tim Housekeeping
           </p>
         </div>
-        <span className="text-xs bg-amber-100 text-amber-700 px-3 py-1 rounded-full font-medium">
-          Dummy Mode
-        </span>
       </div>
 
       {/* Search Bar */}
